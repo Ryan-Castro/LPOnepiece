@@ -1,0 +1,67 @@
+#secIntroduction{
+    width: var(--width);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#secIntroduction>div{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#introContent h1{
+    font-size: 70px;
+}
+#introContent p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#introContent a{
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(to right, blue, rgb(0, 119, 255));
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+@media (max-width: 800px) {
+    #secIntroduction{
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #secIntroduction>div{
+        width: 90%;
+    }
+    #secIntroduction img{
+        width: 200px;
+    }
+    #introImg{
+        align-items: flex-end;
+    }
+    #introContent{
+        margin-top: -50px;
+    }
+}
+@media (max-width: 550px){
+    #introContent h1{
+        font-size: 50px;
+    }
+    #introContent p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px){
+    #introContent h1{
+        font-size: 30px;
+    }
+    #introContent{
+        margin-top: -30px;
+    }
+}
+

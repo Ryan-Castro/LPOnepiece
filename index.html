@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/intro.css">
+    <link rel="stylesheet" href="./src/styles/characters.css">
+    <link rel="stylesheet" href="./src/styles/marine.css">
+    <link rel="stylesheet" href="./src/styles/akumaNoMi.css">
+    <link rel="stylesheet" href="./src/styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>One Piece</title>
+    <link rel="shortcut icon" href="src/img/logoRuffy.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section id="secIntroduction">
+            <div id="introContent">
+                <h1>One piece</h1>
+                <p>No mundo onde piratas são uma ameaça constante aos habitantes e governos das ilhas espalhadas pelos mares, um pirata denominado “rei dos piratas” conhecido por ser o mais forte de todos, Gol D. Roger, é capturado e em suas últimas palavras antes de ser executado, diz que havia escondido seus tesouros num local, e chamou ele de “One piece”</p>
+                <a href="#secCharacters">Conhecer os personagens</a>
+                <a href="#secMarine">Conhecer a Marinha</a>
+                <a href="#secAkumaNoMi">Conhecer as frutas do diabo</a>
+                <a href="#secForm">Fale sobre o tesouro</a>
+            </div>
+            <div id="introImg">
+                <img src="./src/img/Going_Merry.webp" alt="">
+            </div>
+        </section>
+        <section id="secCharacters">
+            <div id="viewCarroseu">
+                <div id="containerCarroseu">
+                    <div class="characters">
+                        <div>
+                            <div>
+                                <img src="./src/img/ruffy.png" alt="">
+                            </div>
+                            <div>
+                                <div class="inforsChapters">
+                                    <div>
+                                        <h1>Luffy</h1>
+                                        <h2>Capitão</h2>
+                                    </div>
+                                    <img src="src/img/logoRuffy.png" alt="">
+                                </div>
+                                <p>Luffy é o protagonista da série e busca se tornar o Rei dos Piratas. Ele é um homem de borracha devido ao consumo da fruta Gomu Gomu no Mi e sonha em encontrar o lendário tesouro One Piece, enquanto desafia o Governo Mundial e outros piratas poderosos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="characters">
+                        <div>
+                            <div>
+                                <img src="./src/img/zoro.png" alt="">
+                            </div>
+                            <div>
+                                <div class="inforsChapters">
+                                    <div>
+                                        <h1>Zoro</h1>
+                                        <h2>Espadachim</h2>
+                                    </div>
+                                    <img src="src/img/logoZoro.png" alt="">
+                                </div>
+                                <p>Zoro sonha em se tornar o maior espadachim do mundo. Ele usa um estilo de luta com três espadas e busca a lendária espada chamada "Hasshoken".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="characters">
+                        <div>
+                            <div>
+                                <img src="./src/img/nami.webp" alt="">
+                            </div>
+                            <div>
+                                <div class="inforsChapters">
+                                    <div>
+                                        <h1>Nami</h1>
+                                        <h2>Navegadora</h2>
+                                    </div>
+                                    <img src="src/img/logoNami.png" alt="">
+                                </div>
+                                <p>Nami sonha em desenhar um mapa completo do mundo. Sua história envolve a busca por vingança contra Arlong, um pirata que a oprimiu e explorou sua vila natal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="characters">
+                        <div>
+                            <div>
+                                <img src="./src/img/usopp.png" alt="">
+                            </div>
+                            <div>
+                                <div class="inforsChapters">
+                                    <div>
+                                        <h1>Usopp</h1>
+                                        <h2>Franco atirador</h2>
+                                    </div>
+                                    <img src="src/img/logoUsopp.png" alt="">
+                                </div>
+                                <p>Usopp é conhecido por contar histórias exageradas. Sua história gira em torno de suas mentiras se tornando realidade e sua busca para se tornar um bravo guerreiro dos mares.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="characters">
+                        <div>
+                            <div>
+                                <img src="./src/img/sanji.webp" alt="">
+                            </div>
+                            <div>
+                                <div class="inforsChapters">
+                                    <div>
+                                        <h1>Sanji</h1>
+                                        <h2>cozinheiro</h2>
+                                    </div>
+                                    <img src="src/img/logoSanji.png" alt="">
+                                </div>
+                                <p>Sanji sonha em encontrar o lendário All Blue, onde todos os peixes e ingredientes do mundo se encontram. Sua história inclui conflitos com sua família e sua busca por sua identidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carroseuControl">
+                    <button onclick="prevCharacters()"><span class="material-symbols-outlined">arrow_back</span></button>
+                    <input type="radio" name="characters" id="charactersBtn0" class="charactersBtn" checked  onchange="setCarrosel(0)">
+                    <input type="radio" name="characters" id="charactersBtn1" class="charactersBtn" onchange="setCarrosel(1)">
+                    <input type="radio" name="characters" id="charactersBtn2" class="charactersBtn" onchange="setCarrosel(2)">
+                    <input type="radio" name="characters" id="charactersBtn3" class="charactersBtn" onchange="setCarrosel(3)">
+                    <input type="radio" name="characters" id="charactersBtn4" class="charactersBtn" onchange="setCarrosel(4)">
+                    <button onclick="nextCharacters()"><span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </div>
+        </section>
+        <section id="secMarine">
+            <div>
+                <h1>Marinha</h1>
+                <p>A Marinha no mundo de "One Piece" é uma poderosa organização militar encarregada de manter a ordem nos mares e combater a pirataria. Liderada pelo Almirante da Frota, a Marinha opera com hierarquia estrita e divide-se em vários escalões, incluindo almirantes, vice-almirantes e marinheiros comuns. Eles são conhecidos por perseguir os piratas e caçar os Chapéu de Palha, o grupo de Luffy, como inimigos. Além disso, a Marinha tem uma presença forte no mundo governado pelo Governo Mundial, o órgão que detém o controle central e exerce uma influência poderosa sobre a política mundial.</p>
+            </div>
+            <div>
+                <img src="./src/img/marinha.png" alt="">
+            </div>
+        </section>
+        <section id="secAkumaNoMi">
+            <h2>Akuma no mi</h2>
+            <h3>Fruta do diabo</h3>
+            <div>
+                <img src="./src/img/akumaNoMi.png" alt="">
+                <p>No mundo de "One Piece", as Frutas do Diabo são frutas místicas que concedem habilidades especiais a quem as come, mas em troca, o usuário perde a capacidade de nadar. Existem três categorias principais de Frutas do Diabo: Paramecia, que concede habilidades físicas únicas, como esticar o corpo; Zoan, que permite ao usuário se transformar em um animal ou uma forma híbrida de animal-humano; e Logia, que concede ao usuário o poder de controlar e se transformar em uma substância natural, como fogo ou fumaça. Essas frutas desempenham um papel central na série, fornecendo uma grande variedade de habilidades e desafios para os personagens, além de contribuir para a complexidade e diversidade do mundo de "One Piece".</p>
+            </div>
+        </section>
+        <section id="secForm">
+            <div>
+                <h2>E pra você, o que é o one piece?</h2>
+                <form action="https://formsubmit.co/ryandasilva1008@gmail.com" method="POST">
+                    <h3>Seu nome</h3>
+                    <input type="text" name="name" required>
+                    <h3>Seu e-mail</h3>
+                    <input type="email" name="email" required>
+                    <h3>De seu palpite</h3>
+                    <textarea name="mensage" placeholder="Seu palpite"></textarea>
+                    <button type="submit">Enviar</button>
+               </form>
+            </div>
+        </section>
+    </main>
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>
