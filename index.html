@@ -58,7 +58,7 @@
                                         <h1>Zoro</h1>
                                         <h2>Espadachim</h2>
                                     </div>
-                                    <img src="src/img/logoZoro.png" alt="">
+                                    <img src="src/img/logoZoro.webp" alt="Logo do zoro">
                                 </div>
                                 <p>Zoro sonha em se tornar o maior espadachim do mundo. Ele usa um estilo de luta com três espadas e busca a lendária espada chamada "Hasshoken".</p>
                             </div>
@@ -67,7 +67,7 @@
                     <div class="characters">
                         <div>
                             <div>
-                                <img src="./src/img/nami.webp" alt="">
+                                <img src="./src/img/nami.webp" alt="Personagem Nami">
                             </div>
                             <div>
                                 <div class="inforsChapters">
@@ -75,7 +75,7 @@
                                         <h1>Nami</h1>
                                         <h2>Navegadora</h2>
                                     </div>
-                                    <img src="src/img/logoNami.png" alt="">
+                                    <img src="src/img/logoNami.png" alt="Logo nami">
                                 </div>
                                 <p>Nami sonha em desenhar um mapa completo do mundo. Sua história envolve a busca por vingança contra Arlong, um pirata que a oprimiu e explorou sua vila natal.</p>
                             </div>
@@ -84,7 +84,7 @@
                     <div class="characters">
                         <div>
                             <div>
-                                <img src="./src/img/usopp.png" alt="">
+                                <img src="./src/img/usopp.webp" alt="Personagem Usopp">
                             </div>
                             <div>
                                 <div class="inforsChapters">
@@ -92,7 +92,7 @@
                                         <h1>Usopp</h1>
                                         <h2>Franco atirador</h2>
                                     </div>
-                                    <img src="src/img/logoUsopp.webp" alt="">
+                                    <img src="src/img/logoUsopp.webp" alt="Logo do Usopp">
                                 </div>
                                 <p>Usopp é conhecido por contar histórias exageradas. Sua história gira em torno de suas mentiras se tornando realidade e sua busca para se tornar um bravo guerreiro dos mares.</p>
                             </div>
@@ -101,7 +101,7 @@
                     <div class="characters">
                         <div>
                             <div>
-                                <img src="./src/img/sanji.webp" alt="">
+                                <img src="./src/img/sanji.webp" alt="Personagem Sanji">
                             </div>
                             <div>
                                 <div class="inforsChapters">
@@ -109,7 +109,7 @@
                                         <h1>Sanji</h1>
                                         <h2>cozinheiro</h2>
                                     </div>
-                                    <img src="src/img/logoSanji.png" alt="">
+                                    <img src="src/img/logoSanji.webp" alt="Logo do Sanji">
                                 </div>
                                 <p>Sanji sonha em encontrar o lendário All Blue, onde todos os peixes e ingredientes do mundo se encontram. Sua história inclui conflitos com sua família e sua busca por sua identidade.</p>
                             </div>
@@ -118,11 +118,11 @@
                 </div>
                 <div id="carroseuControl">
                     <button onclick="prevCharacters()"> <span>&lt;-</span> </button>
-                    <input type="radio" name="characters" id="charactersBtn0" class="charactersBtn" checked  onchange="setCarrosel(0)">
-                    <input type="radio" name="characters" id="charactersBtn1" class="charactersBtn" onchange="setCarrosel(1)">
-                    <input type="radio" name="characters" id="charactersBtn2" class="charactersBtn" onchange="setCarrosel(2)">
-                    <input type="radio" name="characters" id="charactersBtn3" class="charactersBtn" onchange="setCarrosel(3)">
-                    <input type="radio" name="characters" id="charactersBtn4" class="charactersBtn" onchange="setCarrosel(4)">
+                    <label for="charactersBtn0"><input type="radio" name="characters" id="charactersBtn0" class="charactersBtn" checked  onchange="setCarrosel(0)"></label>
+                    <label for="charactersBtn1"><input type="radio" name="characters" id="charactersBtn1" class="charactersBtn" onchange="setCarrosel(1)"></label>
+                    <label for="charactersBtn2"><input type="radio" name="characters" id="charactersBtn2" class="charactersBtn" onchange="setCarrosel(2)"></label>
+                    <label for="charactersBtn3"><input type="radio" name="characters" id="charactersBtn3" class="charactersBtn" onchange="setCarrosel(3)"></label>
+                    <label for="charactersBtn4"><input type="radio" name="characters" id="charactersBtn4" class="charactersBtn" onchange="setCarrosel(4)"></label>
                     <button onclick="nextCharacters()">	<span>-&gt;</span></button>
                 </div>
             </div>
@@ -148,12 +148,12 @@
             <div>
                 <h2>E pra você, o que é o one piece?</h2>
                 <form action="https://formsubmit.co/ryandasilva1008@gmail.com" method="POST">
-                    <h3>Seu nome</h3>
-                    <input type="text" name="name" required>
-                    <h3>Seu e-mail</h3>
-                    <input type="email" name="email" required>
-                    <h3>De seu palpite</h3>
-                    <textarea name="mensage"></textarea>
+                    <label for="inputName">Seu nome</label>
+                    <input type="text" name="name" id="inputName" required>
+                    <label for="inputEmail">Seu e-mail</label>
+                    <input type="email" name="email" id="inputEmail" required>
+                    <label for="inputMessage">De seu palpite</label>
+                    <textarea name="mensage" id="inputMessage"></textarea>
                     <button type="submit">Enviar</button>
                </form>
             </div>
